@@ -1,0 +1,18 @@
+FROM eliplam/airflow_pyspark:0.0.1
+
+USER root
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    vim \
+    && apt-get autoremove -yqq --purge \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+USER airflow
+
+FROM eliplam/airflow_pyspark:0.0.1
+COPY requirements.txt ./
+# WORKDIR /opt/app
+RUN python -m pip install --upgrade pip
+# RUN pip install --no-cache-dir pyspark
+# RUN pip install --no-cache-dir awswrangler
+RUN pip install --no-cache-dir -r requirements.txt
