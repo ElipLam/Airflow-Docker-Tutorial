@@ -24,8 +24,6 @@ My self-learning about Airflow with Docker.
   - [Extending Airflow Image](#extending-airflow-image)
 - [Refer](#refer)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 # Docker
 
 ## Install Docker 
