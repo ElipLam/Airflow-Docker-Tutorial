@@ -23,7 +23,6 @@ My self-learning about Airflow with Docker.
   - [Add user for airflow](#add-user-for-airflow)
   - [Extending Airflow Image](#extending-airflow-image)
 - [Refer](#refer)
-          - [top](#top)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
